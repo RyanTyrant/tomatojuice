@@ -1,0 +1,141 @@
+ 
+  .project {
+    box-shadow: 0px 25px 5px rgba(0, 0, 0, 0.1); /* Adjust shadow properties */
+  }
+  
+  .project {
+    border: 1px solid #444; /* Example border color */
+    border-image-source: url("https://img.freepik.com/premium-vector/black-polygonal-seamless-pattern-with-triangles-dark-repeating-geometric-texture-with-extruded-surface-effect-illustration-background-wallpaper-interior-textile-wrapping-paper-print_278395-91.jpg"); /* Add border image */
+    border-image-slice: 1 1 1 1;  /* Define how to slice the texture for borders */
+  }
+  
+  body {
+    background-image: url("https://img.freepik.com/premium-vector/black-polygonal-seamless-pattern-with-triangles-dark-repeating-geometric-texture-with-extruded-surface-effect-illustration-background-wallpaper-interior-textile-wrapping-paper-print_278395-91.jpg");
+    background-repeat: repeat;  /* Repeat the texture */
+    background-attachment: fixed;  /* Fix the texture to the viewport */
+  }
+  
+  body {
+    font-family: sans-serif;
+    color: #ddd;
+    margin: 1;
+    padding: 1;
+    background-color: #000000;
+  }
+  
+  header {
+    background-color: #333;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header h1, header h3 {
+    margin: 1;
+    color: #fff;
+  }
+  
+  .fixed-nav {
+    background-color: #333;  /* Example background color */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;  
+    top: 0; 
+    left: 0;  
+    width: 100%;  
+    z-index: 10; 
+  }
+  
+  nav {
+    list-style: none;
+    padding: 1;
+  }
+  
+  nav li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #ddd;
+  }
+  
+  nav a:hover {
+    color: #fff;
+  }
+  
+  main {
+    padding: 20px;
+    margin-top: calc(80px + 20px); 
+  }
+  
+  
+  
+  section {
+    margin-bottom: 20px;
+    color: #ddd;
+  }
+  
+  section h2 {
+    margin-bottom: 10px;
+    color: #fff;
+  }
+  
+  .project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .project {
+    width: 30%;
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #444;
+    border: 1px solid #555;
+    border-radius: 5px;
+    color: #ddd;
+  }
+  
+  .project a {
+    text-decoration: none;
+    color: #ddd;
+  }
+  
+  .project a:hover {
+    color: #fff;
+  }
+  
+  /* Added styles for smooth scrolling */
+  a[href^="#"] {
+    scroll-behavior: smooth;
+  }
+  
+
+body {
+  /* Don't hide the default cursor, we will use it as a base */
+  cursor: default;
+}
+
+.custom-cursor {
+  position: absolute; 
+  width: 30px;
+  height: 30px;
+  background-color: orange;
+  border-radius: 50%;
+  /* Increased z-index for better click detection */
+  z-index: 1250;
+  opacity: 0.4;
+  /* Hide the cursor initially */
+  display: none;
+}
+
+.custom-cursor.text-hover {
+  background-color: light orange;
+  transform: scale(1.5);
+}
+  
